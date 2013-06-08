@@ -1,1 +1,2 @@
-This file was created by JetBrains WebStorm 6.0.2 for binding GitHub repository
+Bing Maps module for "fixing" Mac Magic Mouse behavior. When very small scroll is detected, Bing Map starts zooming very slowly.
+This fix stops this behavior and makes Bing Map zoom to the next level.
