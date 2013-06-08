@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <title>Bing Map</title>
+</head>
+<body>
+<div id='mapDiv' style="position:relative; width:800px; height:600px; float: left"></div>
+<script>
+    $(document).ready(function () {
+        (function GetMap() {
+            var options = { credentials: "Your Bing Maps API here", zoom: 12, center: new Microsoft.Maps.Location(38.809771, -77.0321543125) };
+            map = new Microsoft.Maps.Map(document.getElementById('mapDiv'), options);
+
+            Microsoft.Maps.registerModule("MagicMouseFixerModule", "scripts/magicMouseFixer.js");
+            Microsoft.Maps.loadModule("MagicMouseFixerModule", {
+                callback: function () {
+                    var handler = new MagicMouseFixer(map, 10);
+                }});
+        })();
+    });
+</script>
+</body>
+</html>
