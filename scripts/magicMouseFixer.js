@@ -1,9 +1,8 @@
-/**
- * Created with JetBrains WebStorm.
- * User: jola
- * Date: 6/8/13
- * Time: 6:05 PM
- * To change this template use File | Settings | File Templates.
+/*
+ * Bing Maps Path Drawing Module
+ *
+ * Copyright (c) 2013      KJRB
+ * Released under the MIT License
  */
 /**
  * Created with JetBrains WebStorm.
